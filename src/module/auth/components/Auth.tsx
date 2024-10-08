@@ -45,14 +45,8 @@ const Auth: React.FC = () => {
   };
 
   return (
-    <div className="grid grid-cols-2 gap-2 justify-center items-center w-full h-screen p-2">
-      <div className="w-full h-full relative rounded-3xl overflow-clip">
-        <img
-          src="https://res.cloudinary.com/dxmldil1b/image/upload/v1710496867/uae/t0kpis6ufco67xkmzj7p.webp"
-          className="h-full object-cover"
-          alt=""
-        />
-      </div>
+    <div className="w-1/3 h-/12 p-2">
+      
       <form
         onSubmit={loginSubmit}
         className="flex flex-col w-full justify-center items-center shadow-md border rounded-2xl p-2 h-full"
@@ -70,9 +64,7 @@ const Auth: React.FC = () => {
         </div>
         <div className="flex flex-col w-full">
           <label className="input input-bordered flex items-center bg-white">
-            <div className="label mr-1">
-              <Icon icon="icon-[ph--at]" width="24px" height="24px" />
-            </div>
+            
             <input
               value={email}
               onChange={updateInput}
@@ -83,9 +75,6 @@ const Auth: React.FC = () => {
             />
           </label>
           <label className="input input-bordered bg-white flex items-center mt-2">
-            <div className="label mr-1">
-              <Icon icon="icon-[ri--key-fill]" width="24px" height="24px" />
-            </div>
             <input
               value={password}
               onChange={updateInput}

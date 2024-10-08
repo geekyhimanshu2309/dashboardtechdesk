@@ -1,8 +1,6 @@
-import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import Segments from './module/dashboard/components/segments';
 import Login from './module/auth/screens';
-import AdminApp from './AdminApp.tsx'; // Assuming this is your Admin app component
 
 // Fake authentication function
 const isAuthenticated = () => {
@@ -22,7 +20,6 @@ const AppRouter = () => (
     <Route path="/login" element={<Login />} />
 
     {/* Protected Routes */}
-    <Route path="/" element={<ProtectedRoute element={<AdminApp />} />} />
     <Route path="/segments" element={<ProtectedRoute element={<Segments />} />} />
 
     {/* Catch-all Route */}

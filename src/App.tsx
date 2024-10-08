@@ -27,6 +27,7 @@ const App: React.FC = () => {
         authProvider={authProvider}
         dataProvider={dataProvider}
         requireAuth
+        defaultTheme="light"
       >
         <CustomRoutes>
           <Route path="/login" element={<AuthPage />} />
